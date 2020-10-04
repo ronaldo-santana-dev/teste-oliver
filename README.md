@@ -1,5 +1,5 @@
 # teste-oliver
-Teste front end proposto pela Oliver
+Teste front end proposto pela OLIVER Latin America
 
 ## 🤔 Como baixar o projeto
 Existem 2 formas de baixar o projeto:<br><br>
