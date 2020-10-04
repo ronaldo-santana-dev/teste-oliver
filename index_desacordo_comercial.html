@@ -105,10 +105,11 @@
         .content-medidas-provisorias .item{
             display: flex;
             align-items: center;
-            padding: 30px;
-            max-width: 630px;
+            padding: 0px 30px 30px 20px;
+            max-width: 565px;
             margin: 0 auto;
-            margin-right: 15px;
+            
+           
         }
         .content-medidas-provisorias .item p {
             margin-left: 30px;
@@ -116,18 +117,18 @@
             font-size: 14px;
             color: var(--color-text);
             font-weight: 500;
+            margin-top: 20px;
         }
         .title-medidas-provisorias {
             color: var(--color-titles);
             font-weight: bold;
             font-size: 14px;
         }
-        hr {
+        .item-linha {
             border: 1px solid var(--main-bg-color);
-            max-width: 570px;
+            max-width: 520px;
             margin-left: 80px;
             background: var(--main-bg-color);
-
         }
 
         /* Direitos medidas provisórias */
@@ -257,6 +258,7 @@
             margin: 0 auto;
             border: 1px solid rgb(201, 201, 201);
             margin-top: 39px;
+            max-width: 570px !important;
         }
 
         /* Footer Telefones */
@@ -290,7 +292,7 @@
             .img-title {
                 margin-left: 20px;
             }
-            hr {
+            .item-linha {
                 margin-left: 0;
                 margin: 0 auto;
                 max-width: 350px;
@@ -325,7 +327,12 @@
         }
         /* iphone 5*/
         @media(max-width: 375px) {
-           
+            .content-primary-footer {
+                max-width: 350px;
+            }
+            .content-primary-footer .barra {
+                margin-left: 10px;
+            }
             .telefones .telefone {
                 margin-left: 30px;
             }
@@ -384,7 +391,7 @@
                 <span class="title-medidas-provisorias">Remarcação de serviços</span>, reservas e eventos cancelados; 
             </p>
         </div>
-        <hr>
+        <hr class="item-linha">
 
         <div class="item">
             <img src="images/IADC04.png" alt="Disponibilização de credito">
@@ -394,7 +401,7 @@
                 formalizado com o consumidor;
             </p>
         </div>
-        <hr>
+        <hr class="item-linha">
         <div class="item">
             <img src="images/IADC05.png" alt="remarcação para os proximos 12 meses">
             <p>
@@ -404,7 +411,7 @@
                 e o ressarcimento pode ser feito em até 12x.
             </p>
         </div>
-        <hr>
+        <hr class="item-linha">
 
     </div>
     </section>
