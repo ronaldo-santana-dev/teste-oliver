@@ -1,7 +1,7 @@
 # teste-oliver
 Teste front end proposto pela Oliver
 
-## Como baixar o projeto
+## Como baixar o projeto 🤔
 Existem 2 formas de baixar o projeto:<br><br>
 1° Se você tiver o git instalado no seu computador basta você dar um git clone https://github.com/ronaldo-santana-dev/teste-oliver
 
