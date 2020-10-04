@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itaú - Desacordo comercial</title>
+
+    <style>
+        :root {
+            --main-bg-color:  #EC7000;
+            --color-titles: #003399;
+            --color-preheader: #F1F1F1;
+            --color-text: #707070;
+            --bg-white: #ffffff;
+            --bg-medidas-provisorias: #FAF7F5;
+            --bg-footer: #EEE9E4
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Pré header*/
+        header .subject_and_snippet {
+            background-color: var(--color-preheader);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        /* Logo itaú*/
+        header .logo {
+            max-width: 1200px;
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        /* Section informações importantes*/
+        .main-title {
+            background-color: var(--main-bg-color);
+            height: 425px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        .main-title .content {
+            padding-left: 30px;
+        }
+        .img-title {
+            margin-bottom: 20px;
+            
+        }
+        .main-title .text-header {
+            font-size: 34px;
+            color: var(--bg-white);
+            font-weight: bolder;
+            max-width: 600px;
+            line-height: 1.5;
+     
+        }
+
+        /* Olá código */
+        .ola-codigo {
+            max-width: 650px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 50px;
+        }
+        .ola-codigo h2 {
+            color: var(--color-titles);
+            padding-bottom: 30px;
+        }
+        .ola-codigo p {
+            color: var(--color-text);
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        /* Itens medida provisória */
+        .medidas-provisorias{
+            background-color: var(--bg-medidas-provisorias);
+            padding-bottom: 30px;
+        }
+        .content-medidas-provisorias{
+            max-width: 700px;
+            margin: 0 auto;
+           
+        }
+        .content-medidas-provisorias .text-medidas-provisorias {
+            max-width: 650px;
+            line-height: 1.6;
+            margin: 0 auto;
+            padding: 50px;
+            color: var(--color-text);
+            
+        }
+        .content-medidas-provisorias .item{
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            max-width: 630px;
+            margin: 0 auto;
+            margin-right: 15px;
+        }
+        .content-medidas-provisorias .item p {
+            margin-left: 30px;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        .title-medidas-provisorias {
+            color: var(--color-titles);
+            font-weight: bold;
+            font-size: 14px;
+        }
+        hr {
+            border: 1px solid var(--main-bg-color);
+            max-width: 570px;
+            margin-left: 80px;
+            background: var(--main-bg-color);
+
+        }
+
+        /* Direitos medidas provisórias */
+        .mp-direitos {
+            margin-top: 50px;
+            max-width: 550px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            border: 1px solid var(--main-bg-color);
+            padding: 50px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border-radius: 20px;
+            position: relative;
+          
+        }
+        .mp-direitos h2 {
+            max-width: 680px;
+            text-align: center;
+            margin: 0 auto;
+            color: var(--color-titles);
+            font-size: 16px;
+        }
+        .mp-direitos .mps {
+            display: flex;
+            margin-top: 50px;
+            align-items: center;
+        }
+        .mp-direitos .mp-1 {
+            background: var(--color-titles);
+            width: 248px;
+            height: 61px;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 34px;
+        }
+        .mp-direitos .mp-1:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        .mp-direitos .mp-2 {
+            background: var(--color-titles);
+            width: 258px;
+            height: 72px;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .mp-direitos .mp-2:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        .mp-direitos .mp-1 .subtext-1 {
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .mp-direitos .mp-2 .subtext-2 {
+            font-size: 10px;
+            font-weight: bold;
+            max-width: 160px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        /* Footer Links */
+        .canais-digitais {
+            background-color: var(--bg-footer);
+        }
+        .content-primary-footer {
+            max-width: 450px;
+            padding-top: 39px;
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+        .content-primary-footer .texto-footer h2 {
+            font-size: 15px;
+            color: var(--main-bg-color);
+            padding-bottom: 19px;
+            max-width: 230px;
+        }
+        .content-primary-footer .texto-footer p {
+            font-size: 15px;
+            color: var(--color-titles);
+            max-width: 230px;
+        }
+        .content-primary-footer .barra{
+            background: var(--main-bg-color);
+            width: 2px;
+            height: 105px;
+        }
+        .content-primary-footer .links .link{
+            display: flex;
+            align-items: center;
+        }
+        .content-primary-footer .links .link span{
+            margin-left: 15px;
+        }
+
+        .content-primary-footer .links .link .text-link-site{
+            color: var(--color-titles);
+            font-weight: bold;
+        }
+        .content-primary-footer .links .link .text-link-site:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        .content-primary-footer .links .link .text-link-app{
+            color: var(--color-titles);
+        }
+        .content-primary-footer .links .link .text-link-app:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        .barra-footer {
+            margin: 0 auto;
+            border: 1px solid rgb(201, 201, 201);
+            margin-top: 39px;
+        }
+
+        /* Footer Telefones */
+        .telefones {
+            max-width: 630px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+        }
+        .telefone .titulo-telefone {
+            font-size: 14px;
+            font-weight: bold;
+            color: var(--color-titles);
+        }
+        .telefone .numero-telefone {
+            font-size: 14px;
+            color: var(--color-titles);
+        }
+
+        /* Adaptação mobile */
+        @media(max-width: 500px) {
+            .main-title .text-header {
+                font-size: 30px;
+                text-align: center;
+                max-width: 400px;
+            }
+            .main-title .content {
+                padding-left: 0px;
+            }
+            .img-title {
+                margin-left: 20px;
+            }
+            hr {
+                margin-left: 0;
+                margin: 0 auto;
+                max-width: 350px;
+            }
+            .mp-direitos {
+                border: none;
+            }
+          
+            .mp-direitos .mps{
+                max-width: 350px;
+            }
+            .mp-direitos .mps .mp-1,.mp-direitos .mps .mp-2 {
+              height: 100px;
+            }
+            .subtext-2 {
+                width: 130px;
+            }
+            .content-primary-footer{
+                max-width: 350px;
+                display: flex;
+                align-items: center;
+            }
+            .content-primary-footer .barra {
+                height: 150px;
+            }
+
+            .barra-footer {
+                max-width: 500px;
+            }
+
+        }
+        /* Iphone 5 */
+        @media(max-width: 375px) {
+           
+            .telefones .telefone {
+                margin-left: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="subject_and_snippet">
+            <p>
+                <strong>Subject: </strong> Precisa estornar uma compra devido à Covid-19?<br>
+                <strong>Snippet: </strong> Entenda o que você precisa fazer neste momento
+            </p>
+        </div>
+        <div class="logo">
+            <img src="images/IADC01.png" alt="logo">
+        </div>
+
+        <div class="main-title">
+            <div class="content">
+            <div class="img-title">
+                <img src="images/IADC02.png" alt="avião logo">
+            </div>
+            <div class="text-header">
+                <p>
+                    Informações importantes sobre compras relacionadas a turismo, cultura e viagens neste momento.
+                </p>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <section class="ola-codigo">
+        <h2>Olá código!</h2>
+        <p>
+            Você entrou em contato com a Central e Atendimento para pedir o
+            <strong>estorno de uma compra</strong>, certo? Conforme as medidas
+            provisórias nº 925 e nº 948, sempre que a compra ou a reserva feita
+            com o seu cartão Itaucard seja relacionada a turismo, viagens ou cultura,
+            orientamos que <strong>você entre em contato direto com o estabelecimento
+            em que realizou a compra</strong> para resolver a questão da melhor forma possível.
+        </p>
+    </section>
+
+    <section class="medidas-provisorias">
+        <div class="content-medidas-provisorias">
+        <p class="text-medidas-provisorias">
+            Conforme as medidas provisórias nº 925 e nº 948, as empresas responsáveis
+            pelas vendas e reservas relacionadas aos setores mencionados acima não têm
+            obrigação de devolver o valor pago, entretanto elas precisam assegurar
+            as seguintes medidas: 
+        </p>
+        <div class="item">
+            <img src="images/IADC03.png" alt="remarcação de serviços">
+            <p>
+                <span class="title-medidas-provisorias">Remarcação de serviços</span>, reservas e eventos cancelados; 
+            </p>
+        </div>
+        <hr>
+
+        <div class="item">
+            <img src="images/IADC04.png" alt="Disponibilização de credito">
+            <p>
+                <span class="title-medidas-provisorias">Disponibilização de crédito para uso ou abatimento na compra</span> de outros serviços,
+                reservas e eventos, disponíveis nas respectivas empresas, ou outro acordo a ser
+                formalizado com o consumidor;
+            </p>
+        </div>
+        <hr>
+        <div class="item">
+            <img src="images/IADC05.png" alt="remarcação para os proximos 12 meses">
+            <p>
+                <span class="title-medidas-provisorias">Remarcação para os próximos 12 meses sem custo adicional para passagens</span>
+                compradas até 31 de dezembro de 2020. O passageiro pode solicitar o cancelamento,
+                mas, nesse caso, poderá ser cobrada uma eventual penalidade prevista em contrato,
+                e o ressarcimento pode ser feito em até 12x.
+            </p>
+        </div>
+        <hr>
+
+    </div>
+    </section>
+
+    <section class="mp-direitos">
+        <h2>Confira na íntegra as duas medidas provisórias e entenda quais são seus direitos:</h2>
+        <div class="mps">
+            <div class="mp-1">
+                Confira a MP nº 948
+                <p class="subtext-1">(Companhias aéreas)</p>
+            </div>
+            <div class="mp-2">
+                Confira a MP nº 925
+                <p class="subtext-2">(Serviços, reservas e eventos
+                dos setores de turismo e cultura)</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="canais-digitais">
+        <div class="content-primary-footer">
+            <div class="texto-footer">
+                <h2>Acesse nossos canais digitais.</h2>
+                <p>
+                    Durante esse momento delicado, nossas centrais estão operando
+                    com capacidade reduzida. Dê preferência aos canais digitais.
+                </p>
+            </div>
+            
+            <div class="barra">
+                &nbsp;
+            </div>
+
+            <div class="links">
+                
+                <div class="link">
+                    <img src="images/IADC06.png" alt="icone computador">
+                    <span class="text-link-site">
+                        itaucard.com.br
+                    </span>
+                </div>
+
+                <span class="link">
+                    <img src="images/IADC07.png" alt="icone celular">
+                    <span class="text-link-app">
+                        app no celular
+                    </span>
+                </span>
+            </div>
+        </div>
+        <hr class="barra-footer">
+
+        <div class="telefones">
+            <div class="telefone">
+                <span class="titulo-telefone">SAC</span>
+                <div class="numero-telefone">0800 724 4845</div>
+            </div>
+
+            <div class="telefone">
+                <span class="titulo-telefone">Ouvidoria</span>
+                <div class="numero-telefone">0800 570 0011</div>
+            </div>
+
+            <div class="telefone">
+                <span class="titulo-telefone">Deficiente auditivo/fala </span>
+                <div class="numero-telefone">0800 724 4838</div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
