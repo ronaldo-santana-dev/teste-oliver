@@ -9,7 +9,7 @@ Existem 2 formas de baixar o projeto:<br><br>
 
 ## 👨‍💻 Como executar o projeto
 
-Após baixar o projeto você pode executar o projeto apenas<br> dando um duplo clique no arquivo index_desacordo_comercial.html<br>
+Após baixa-lo você pode executar o projeto apenas<br> dando um duplo clique no arquivo index_desacordo_comercial.html<br>
 
 Ou se preferir você pode executa-lo simulando um servidor, basta ter<br> o visual studio code e baixar a extensão 'Live Server' e executa-lo.
 
